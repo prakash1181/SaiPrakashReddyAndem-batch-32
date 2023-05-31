@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>profile</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h3 id="name"></h3>
+    <img src="image.png.jpeg" alt="Avatar">
+    <p>hobbie:<span id="lasthobbie"></span></p>
+    <script>
+       let person = {
+         firstName : "sai prakash",
+         lastName  : "Andem",
+         age     : 23,
+         gender  :"male",
+         email  :"prakashreddy123@gmail.com",
+         hobbies:["Blogging","Reading","Learning a new language"]
+          
+       }; 
+       document.getElementById("lasthobbie").innerHTML = person.hobbies[2];
+       document.getElementById("name").innerHTML = person.firstName+person. lastName;
+    </script>
+
+</body>
+</html>
