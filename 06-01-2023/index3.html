@@ -1,0 +1,40 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+           let env="stage";
+           let envi="prod";
+            let amount=100;
+            switch(env){
+              case("dev"):
+                 amount=amount+(10*100)/amount;
+                 break;
+              case("test"):
+                amount=amount+(20*100)/amount;
+                break;
+              case("stage"):
+                amount=amount+(30*100)/amount;
+                break;
+              case("prod"):
+                amount=amount+(5*100)/amount;
+                break;
+              default:  
+            }
+            console.log(amount)
+            amount=100;
+            if(envi="dev"){
+                amount=amount+(10*100)/amount;
+            }
+            else if(envi="test"){
+                amount=amount+(20*100)/amount;
+            }
+            else if(envi="stage"){
+                amount=amount+(20*100)/amount;
+            }
+            else if(envi="prod"){
+                amount=amount+(20*100)/amount;
+           }
+           console.log(amount)
+        </script>
+    </body>
+</html>
