@@ -19,7 +19,8 @@
          hobbies:["Blogging","Reading","Learning a new language"]
           
        }; 
-       document.getElementById("lasthobbie").innerHTML = person.hobbies[2];
+       console.log(person.hobbies[person.hobbies.length-1]);
+       document.getElementById("lasthobbie").innerHTML = person.hobbies[person.hobbies.length-1];
        document.getElementById("name").innerHTML = person.firstName+person. lastName;
     </script>
 
