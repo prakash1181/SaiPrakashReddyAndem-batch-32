@@ -1,22 +1,22 @@
 <html>
     <head>
         <script>
-            let Hobbies=["playing cricket", "watching movies","playing video games","hiking"]
+            let Hobbies=["playing", "dancing","reading","travilling"]
             function hobby1(){
-                return Hobbies;
+                return hobbies;
             }
             console.log(hobby1());
 
             function addHobby(newElement){
                 Hobbies.push(newElement);
-                return Hobbies;
+                return hobbies;
             }
             console.log(addHobby("singing"));
 
             function delHobby(delElement){
-                let index=Hobbies.indexOf(delElement);
+                let index=hobbies.indexOf(delElement);
                 Hobbies.splice(index, 1);
-                return Hobbies;
+                return hobbies;
             }
             console.log(delHobby("watching movies")); 
             
