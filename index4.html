@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            let Hobbies=["playing cricket", "watching movies","playing video games","hiking"]
+            function hobbyreturn(){
+                return Hobbies;
+            }
+            console.log(hobbyreturn());
+
+            function addHobby(newElement){
+                Hobbies.push(newElement);
+                return Hobbies;
+            }
+            console.log(addHobby("singing"));
+
+            function delHobby(delElement){
+                let index=Hobbies.indexOf(delElement);
+                Hobbies.splice(index, 1);
+                return Hobbies;
+            }
+            console.log(delHobby("watching movies")); 
+            
+        </script>
+    </head>
+</html>
