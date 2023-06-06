@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Personal Profile</h1>
+        <div id="fName">
+           <b> First Name:</b> <input type="text" id="fN" />
+        </div>
+        <div id="lName">
+            <b>Last Name:</b> <input type="text" id="lN" />
+        </div>
+        <div id="dateOfBirth">
+           <b> Date of Birth:</b> <input type="text" id="dob" />
+        </div>
+        <div id="email">
+            <b>E-mail:</b> <input type="text" id="mail" />
+        </div>
+        <div id="phone">
+            <b>Phone Number: </b><input type="text" id="mobile" />
+        </div>
+        <div id="submit"><button type="submit" onclick="submit();">submit</button></div>
+
+        <script>
+            function submit() {
+                const fName = document.getElementById("fN").value;
+                const lname = document.getElementById("lN").value;
+                const dateOfBirth = document.getElementById("dob").value;
+                const email = document.getElementById("mail").value;
+                const phone = document.getElementById("mobile").value;
+                document.getElementById("fName").innerHTML = fName;
+                document.getElementById("lName").innerHTML = lName;
+                document.getElementById("dateOfBirth").innerHTML = dateOfBirth;
+                document.getElementById("email").innerHTML = email;
+                document.getElementById("phone").innerHTML = phone;
+                document.getElementById("submit").innerHTML = "";
+            }
+        </script>
+    </body>
+</html>
